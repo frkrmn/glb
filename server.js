@@ -5,7 +5,7 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const PORT = 3000;
+const PORT = 8080;
 const STATE_FILE = join(__dirname, ".scraper-state.json");
 
 let isRunning = false;
@@ -290,13 +290,13 @@ const HTML = `<!DOCTYPE html>
   </header>
 
   <div class="sources" id="sources">
-    <div class="source-card selected" data-source="amsflow" onclick="toggleSource(this)">
+    <div class="source-card selected" data-source="brfkglb" onclick="toggleSource(this)">
       <div class="card-top">
-        <span class="source-name">Amsflow</span>
+        <span class="source-name">Brfkglb</span>
         <span class="checkmark">✓</span>
       </div>
       <div class="source-desc">Global fear & greed — 10 markets</div>
-      <div class="last-run never" id="run-amsflow">
+      <div class="last-run never" id="run-brfkglb">
         <span class="last-run-dot"></span>
         <span>Henüz çalıştırılmadı</span>
       </div>

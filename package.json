@@ -4,8 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "scrape:kmquant": "tsx scrape-brfkglb.ts",
-  
+    "scrape:kmquant": "tsx scrape-brfkglb.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "latest",
