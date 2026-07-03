@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { connect, PageWithCursor } from "puppeteer-real-browser";
+import { connect } from "puppeteer-real-browser";
 import isCI from "is-ci";
 import dotenv from "dotenv";
 
@@ -11,16 +11,16 @@ if (!isCI) {
 const BASE_URL = "https://amsflow.com/data-reports/sentiment";
 
 const MARKETS = [
-  { key: "us",         label: "US Market",   slug: "us",         h1: "US Market" },
-  { key: "eu",         label: "EU Market",   slug: "eu",         h1: "EU Market" },
-  { key: "uk",         label: "UK Market",   slug: "uk",         h1: "UK Market" },
-  { key: "japan",      label: "Japan",       slug: "japan",      h1: "Japan" },
-  { key: "china",      label: "China",       slug: "china",      h1: "China" },
-  { key: "australia",  label: "Australia",   slug: "australia",  h1: "Australia" },
-  { key: "canada",     label: "Canada",      slug: "canada",     h1: "Canada" },
-  { key: "gold",       label: "Gold",        slug: "gold",       h1: "Gold" },
-  { key: "silver",     label: "Silver",      slug: "silver",     h1: "Silver" },
-  { key: "southkorea", label: "South Korea", slug: "southkorea", h1: "South Korea" },
+  { key: "us",         label: "US Market",   slug: "us" },
+  { key: "eu",         label: "EU Market",   slug: "eu" },
+  { key: "uk",         label: "UK Market",   slug: "uk" },
+  { key: "japan",      label: "Japan",       slug: "japan" },
+  { key: "china",      label: "China",       slug: "china" },
+  { key: "australia",  label: "Australia",   slug: "australia" },
+  { key: "canada",     label: "Canada",      slug: "canada" },
+  { key: "gold",       label: "Gold",        slug: "gold" },
+  { key: "silver",     label: "Silver",      slug: "silver" },
+  { key: "southkorea", label: "South Korea", slug: "southkorea" },
 ];
 
 const delay = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -58,69 +58,8 @@ function extractHistory(text: string) {
   return history;
 }
 
-// Sayfanin dogru market icin yuklenmesini bekle
-async function waitForMarketPage(
-  page: PageWithCursor,
-  h1Text: string,
-  maxWait = 30000
-): Promise<string> {
-  const start = Date.now();
-  while (Date.now() - start < maxWait) {
-    const text: string = await page.evaluate(() => document.body.innerText);
-    // h1 basliginin bu market icin dogru oldugunu kontrol et
-    // ornegin "China Fear & Greed Index" icerir mi?
-    if (
-      text.includes("FEAR & GREED INDEX") &&
-      text.includes(`${h1Text} Fear & Greed Index`)
-    ) {
-      return text;
-    }
-    console.log(`  Waiting for "${h1Text}" page to load...`);
-    await delay(3000);
-  }
-  const text: string = await page.evaluate(() => document.body.innerText);
-  console.log(`  TIMEOUT for ${h1Text} — snippet: "${text.slice(0, 120).replace(/\n/g, " | ")}"`);
-  return text;
-}
-
-async function scrapeMarket(
-  page: PageWithCursor,
-  slug: string,
-  label: string,
-  h1: string
-) {
-  const url = `${BASE_URL}/${slug}`;
-  console.log(`\n→ ${label}`);
-
-  await page.goto(url, { waitUntil: "domcontentloaded" });
-  await delay(5000);
-
-  const text = await waitForMarketPage(page, h1);
-  console.log(`  snippet: "${text.slice(0, 160).replace(/\n/g, " | ")}"`);
-
-  const mainMatch = text.match(/FEAR\s*&\s*GREED\s*INDEX[\s\n]+(\d+)[\s\n]+([A-Z][A-Z ]+)/);
-  const score = mainMatch ? parseInt(mainMatch[1], 10) : null;
-  const classification = mainMatch
-    ? mainMatch[2].trim().toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase())
-    : "unknown";
-
-  const historical = {
-    yesterday: extractHistorical(text, "Yesterday"),
-    lastWeek:  extractHistorical(text, "Last\\s+Week"),
-    lastMonth: extractHistorical(text, "Last\\s+Month"),
-  };
-
-  const yearlyHigh = extractYearly(text, "Yearly\\s+High");
-  const yearlyLow  = extractYearly(text, "Yearly\\s+Low");
-  const history    = extractHistory(text);
-
-  console.log(`  ✓ score=${score}, class=${classification}, history=${history.length} rows`);
-
-  return { score, classification, historical, yearlyHigh, yearlyLow, history };
-}
-
 async function run() {
-  const { browser, page } = await connect({
+  const { browser } = await connect({
     headless: false,
     args: [],
     customConfig: {},
@@ -134,15 +73,62 @@ async function run() {
 
   try {
     for (const market of MARKETS) {
+      console.log(`\n→ ${market.label}`);
+      const page = await browser.newPage();
+
       try {
-        const data = await scrapeMarket(page, market.slug, market.label, market.h1);
-        results.push({ key: market.key, label: market.label, ...data });
-      } catch (err) {
-        console.error(`✗ Failed ${market.label}:`, err);
+        // Cache'i tamamen kapat
+        await page.setCacheEnabled(false);
+
+        await page.goto(`${BASE_URL}/${market.slug}`, {
+          waitUntil: "networkidle2",
+        });
+        await delay(5000);
+
+        // Skoru dogrudan aktif sidebar elementinden al (en guvenilir)
+        const sidebarData = await page.evaluate((targetLabel) => {
+          const links = document.querySelectorAll("a.block.p-2.rounded-lg");
+          for (const link of links) {
+            const spans = link.querySelectorAll("span");
+            if (spans.length < 3) continue;
+            const lbl   = spans[0].textContent?.trim() ?? "";
+            const score = spans[1].textContent?.trim() ?? "";
+            const cls   = spans[2].textContent?.trim() ?? "";
+            if (lbl === targetLabel) {
+              return { score: parseInt(score, 10), classification: cls };
+            }
+          }
+          return null;
+        }, market.label);
+
+        console.log(`  sidebar data:`, sidebarData);
+
+        const text: string = await page.evaluate(() => document.body.innerText);
+
+        const score          = sidebarData?.score ?? null;
+        const classification = sidebarData?.classification ?? "unknown";
+
+        const historical = {
+          yesterday: extractHistorical(text, "Yesterday"),
+          lastWeek:  extractHistorical(text, "Last\\s+Week"),
+          lastMonth: extractHistorical(text, "Last\\s+Month"),
+        };
+
+        const yearlyHigh = extractYearly(text, "Yearly\\s+High");
+        const yearlyLow  = extractYearly(text, "Yearly\\s+Low");
+        const history    = extractHistory(text);
+
+        console.log(`  ✓ score=${score}, class=${classification}, rows=${history.length}`);
+
         results.push({
-          key: market.key,
-          label: market.label,
-          score: null,
+          key: market.key, label: market.label,
+          score, classification, historical, yearlyHigh, yearlyLow, history,
+        });
+
+      } catch (err) {
+        console.error(`  ✗ Failed:`, err);
+        results.push({
+          key: market.key, label: market.label, score: null,
           classification: "unknown",
           historical: {
             yesterday: { score: null, classification: "unknown" },
@@ -153,16 +139,16 @@ async function run() {
           yearlyLow:  { date: "unknown", score: null, classification: "unknown" },
           history: [],
         });
+      } finally {
+        await page.close();
+        await delay(2000);
       }
-
-      await delay(4000);
     }
   } finally {
     await browser.close();
   }
 
   const output = { markets: results, lastUpdated: new Date().toISOString() };
-
   const apiDir = path.join(process.cwd(), "public", "api");
   if (!fs.existsSync(apiDir)) fs.mkdirSync(apiDir, { recursive: true });
   fs.writeFileSync(path.join(apiDir, "amsflow.json"), JSON.stringify(output, null, 2), "utf-8");
