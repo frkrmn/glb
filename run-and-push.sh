@@ -12,14 +12,14 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:$PAT
 cd /Users/farukerman/Desktop/brfglb || exit 1
 
 # Run the scrape script
-npx tsx scrape-amsflow.ts
+npx tsx scrape-brfkglb.ts
 
 # Check if scrape succeeded
 if [ $? -eq 0 ]; then
   echo "Scrape succeeded. Committing and pushing changes..."
   # Pull remote changes first to avoid push rejection
   git pull --rebase origin main
-  git add public/api/amsflow.json .scraper-state.json
+  git add public/api/brfkglb.json .scraper-state.json
   # Commit only if there are changes staged
   git diff --staged --quiet || git commit -m "Automated scraper run $(date +'%Y-%m-%d %H:%M:%S')"
   git push origin main

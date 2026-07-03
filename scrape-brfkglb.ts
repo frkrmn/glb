@@ -81,7 +81,7 @@ async function run() {
         await page.setCacheEnabled(false);
 
         await page.goto(`${BASE_URL}/${market.slug}`, {
-          waitUntil: "networkidle2",
+          waitUntil: "domcontentloaded",
         });
         await delay(5000);
 
@@ -151,8 +151,8 @@ async function run() {
   const output = { markets: results, lastUpdated: new Date().toISOString() };
   const apiDir = path.join(process.cwd(), "public", "api");
   if (!fs.existsSync(apiDir)) fs.mkdirSync(apiDir, { recursive: true });
-  fs.writeFileSync(path.join(apiDir, "amsflow.json"), JSON.stringify(output, null, 2), "utf-8");
-  console.log("\n✓ Saved to public/api/amsflow.json");
+  fs.writeFileSync(path.join(apiDir, "brfkglb.json"), JSON.stringify(output, null, 2), "utf-8");
+  console.log("\n✓ Saved to public/api/brfkglb.json");
 }
 
 run().catch(console.error);

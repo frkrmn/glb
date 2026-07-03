@@ -290,13 +290,13 @@ const HTML = `<!DOCTYPE html>
   </header>
 
   <div class="sources" id="sources">
-    <div class="source-card selected" data-source="amsflow" onclick="toggleSource(this)">
+    <div class="source-card selected" data-source="brfkglb" onclick="toggleSource(this)">
       <div class="card-top">
         <span class="source-name">Amsflow</span>
         <span class="checkmark">✓</span>
       </div>
       <div class="source-desc">Global fear & greed — 10 markets</div>
-      <div class="last-run never" id="run-amsflow">
+      <div class="last-run never" id="run-brfkglb">
         <span class="last-run-dot"></span>
         <span>Henüz çalıştırılmadı</span>
       </div>
