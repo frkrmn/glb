@@ -83,7 +83,20 @@ async function run() {
         await page.goto(`${BASE_URL}/${market.slug}`, {
           waitUntil: "domcontentloaded",
         });
-        await delay(5000);
+        // "Yesterday" ve "Yearly High" metinleri sayfada görünene kadar bekle.
+        // Bu bölümler lazy-load olduğu için sabit delay yerine bu kullanılıyor.
+        try {
+          await page.waitForFunction(
+            () => document.body.innerText.includes("Yesterday"),
+            { timeout: 20000 }
+          );
+          await page.waitForFunction(
+            () => document.body.innerText.includes("Yearly High"),
+            { timeout: 10000 }
+          );
+        } catch {
+          console.warn(`  ⚠ Timeout waiting for historical section on ${market.slug}, proceeding anyway`);
+        }
 
         // Skoru dogrudan aktif sidebar elementinden al (en guvenilir)
         const sidebarData = await page.evaluate((targetLabel) => {
