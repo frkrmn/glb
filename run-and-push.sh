@@ -17,11 +17,11 @@ npx tsx scrape-brfkglb.ts
 # Check if scrape succeeded
 if [ $? -eq 0 ]; then
   echo "Scrape succeeded. Committing and pushing changes..."
-  # Pull remote changes first to avoid push rejection
-  git pull --rebase origin main
   git add public/api/brfkglb.json .scraper-state.json
   # Commit only if there are changes staged
   git diff --staged --quiet || git commit -m "Automated scraper run $(date +'%Y-%m-%d %H:%M:%S')"
+  # Pull remote changes (rebase our commit on top) before pushing
+  git pull --rebase origin main
   git push origin main
   echo "Push complete."
 else
