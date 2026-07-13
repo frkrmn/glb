@@ -1487,15 +1487,15 @@
     {
       "key": "gold",
       "label": "Gold",
-      "score": 30,
+      "score": 35,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 31,
+          "score": 30,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 36,
+          "score": 33,
           "classification": "Fear"
         },
         "lastMonth": {
@@ -1514,6 +1514,12 @@
         "score": 15
       },
       "history": [
+        {
+          "date": "Jul 12, 2026",
+          "score": 35,
+          "classification": "Fear",
+          "assetPrice": "4,080"
+        },
         {
           "date": "Jul 10, 2026",
           "score": 30,
@@ -1687,23 +1693,17 @@
           "score": 35,
           "classification": "Fear",
           "assetPrice": "4,363"
-        },
-        {
-          "date": "Jun 7, 2026",
-          "score": 28,
-          "classification": "Fear",
-          "assetPrice": "4,336"
         }
       ]
     },
     {
       "key": "silver",
       "label": "Silver",
-      "score": 27,
+      "score": 28,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 25,
+          "score": 27,
           "classification": "Fear"
         },
         "lastWeek": {
@@ -1711,7 +1711,7 @@
           "classification": "Fear"
         },
         "lastMonth": {
-          "score": 28,
+          "score": 27,
           "classification": "Fear"
         }
       },
@@ -1726,6 +1726,12 @@
         "score": 13
       },
       "history": [
+        {
+          "date": "Jul 12, 2026",
+          "score": 28,
+          "classification": "Fear",
+          "assetPrice": "58"
+        },
         {
           "date": "Jul 10, 2026",
           "score": 27,
@@ -1899,12 +1905,6 @@
           "score": 24,
           "classification": "Extreme Fear",
           "assetPrice": "68"
-        },
-        {
-          "date": "Jun 7, 2026",
-          "score": 17,
-          "classification": "Extreme Fear",
-          "assetPrice": "67"
         }
       ]
     },
@@ -2121,5 +2121,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-07-12T19:58:28.645Z"
+  "lastUpdated": "2026-07-13T03:31:35.966Z"
 }
