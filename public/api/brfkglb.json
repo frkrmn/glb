@@ -1699,19 +1699,19 @@
     {
       "key": "silver",
       "label": "Silver",
-      "score": 57,
+      "score": 64,
       "classification": "Greed",
       "historical": {
         "yesterday": {
-          "score": 50,
-          "classification": "Neutral"
+          "score": 57,
+          "classification": "Greed"
         },
         "lastWeek": {
-          "score": 42,
+          "score": 43,
           "classification": "Fear"
         },
         "lastMonth": {
-          "score": 27,
+          "score": 28,
           "classification": "Fear"
         }
       },
@@ -1726,6 +1726,12 @@
         "score": 13
       },
       "history": [
+        {
+          "date": "Aug 9, 2026",
+          "score": 64,
+          "classification": "Greed",
+          "assetPrice": "63"
+        },
         {
           "date": "Aug 7, 2026",
           "score": 57,
@@ -1896,12 +1902,6 @@
         },
         {
           "date": "Jul 6, 2026",
-          "score": 30,
-          "classification": "Fear",
-          "assetPrice": "62"
-        },
-        {
-          "date": "Jul 5, 2026",
           "score": 30,
           "classification": "Fear",
           "assetPrice": "62"
@@ -2121,5 +2121,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-08-09T05:45:45.852Z"
+  "lastUpdated": "2026-08-10T05:45:51.897Z"
 }
