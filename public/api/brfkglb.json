@@ -1518,7 +1518,7 @@
           "date": "Aug 14, 2026",
           "score": 62,
           "classification": "Greed",
-          "assetPrice": "4,432"
+          "assetPrice": "4,437"
         },
         {
           "date": "Aug 13, 2026",
@@ -2121,5 +2121,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-08-15T05:45:49.001Z"
+  "lastUpdated": "2026-08-16T05:45:49.090Z"
 }
