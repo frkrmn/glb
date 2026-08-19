@@ -3,19 +3,19 @@
     {
       "key": "us",
       "label": "US Market",
-      "score": 62,
+      "score": 57,
       "classification": "Greed",
       "historical": {
         "yesterday": {
-          "score": 64,
+          "score": 62,
           "classification": "Greed"
         },
         "lastWeek": {
-          "score": 61,
+          "score": 59,
           "classification": "Greed"
         },
         "lastMonth": {
-          "score": 61,
+          "score": 58,
           "classification": "Greed"
         }
       },
@@ -30,6 +30,12 @@
         "score": 23
       },
       "history": [
+        {
+          "date": "Aug 18, 2026",
+          "score": 57,
+          "classification": "Greed",
+          "assetPrice": "7,692"
+        },
         {
           "date": "Aug 17, 2026",
           "score": 62,
@@ -203,31 +209,25 @@
           "score": 51,
           "classification": "Neutral",
           "assetPrice": "7,483"
-        },
-        {
-          "date": "Jul 7, 2026",
-          "score": 52,
-          "classification": "Neutral",
-          "assetPrice": "7,504"
         }
       ]
     },
     {
       "key": "eu",
       "label": "EU Market",
-      "score": 76,
-      "classification": "Extreme Greed",
+      "score": 69,
+      "classification": "Greed",
       "historical": {
         "yesterday": {
-          "score": 77,
+          "score": 76,
           "classification": "Extreme Greed"
         },
         "lastWeek": {
-          "score": 74,
-          "classification": "Greed"
+          "score": 75,
+          "classification": "Extreme Greed"
         },
         "lastMonth": {
-          "score": 53,
+          "score": 49,
           "classification": "Neutral"
         }
       },
@@ -242,6 +242,12 @@
         "score": 20
       },
       "history": [
+        {
+          "date": "Aug 18, 2026",
+          "score": 69,
+          "classification": "Greed",
+          "assetPrice": "6,468"
+        },
         {
           "date": "Aug 17, 2026",
           "score": 76,
@@ -415,32 +421,26 @@
           "score": 51,
           "classification": "Neutral",
           "assetPrice": "6,205"
-        },
-        {
-          "date": "Jul 7, 2026",
-          "score": 58,
-          "classification": "Greed",
-          "assetPrice": "6,320"
         }
       ]
     },
     {
       "key": "uk",
       "label": "UK Market",
-      "score": 59,
+      "score": 60,
       "classification": "Greed",
       "historical": {
         "yesterday": {
-          "score": 57,
+          "score": 59,
           "classification": "Greed"
         },
         "lastWeek": {
-          "score": 65,
+          "score": 63,
           "classification": "Greed"
         },
         "lastMonth": {
-          "score": 54,
-          "classification": "Neutral"
+          "score": 56,
+          "classification": "Greed"
         }
       },
       "yearlyHigh": {
@@ -454,6 +454,12 @@
         "score": 28
       },
       "history": [
+        {
+          "date": "Aug 18, 2026",
+          "score": 60,
+          "classification": "Greed",
+          "assetPrice": "10,728"
+        },
         {
           "date": "Aug 17, 2026",
           "score": 59,
@@ -627,31 +633,25 @@
           "score": 47,
           "classification": "Neutral",
           "assetPrice": "10,489"
-        },
-        {
-          "date": "Jul 7, 2026",
-          "score": 58,
-          "classification": "Greed",
-          "assetPrice": "10,666"
         }
       ]
     },
     {
       "key": "japan",
       "label": "Japan",
-      "score": 63,
-      "classification": "Greed",
+      "score": 50,
+      "classification": "Neutral",
       "historical": {
         "yesterday": {
           "score": 61,
           "classification": "Greed"
         },
         "lastWeek": {
-          "score": 51,
+          "score": 55,
           "classification": "Neutral"
         },
         "lastMonth": {
-          "score": 54,
+          "score": 48,
           "classification": "Neutral"
         }
       },
@@ -667,10 +667,16 @@
       },
       "history": [
         {
+          "date": "Aug 19, 2026",
+          "score": 50,
+          "classification": "Neutral",
+          "assetPrice": "65,532"
+        },
+        {
           "date": "Aug 18, 2026",
-          "score": 63,
+          "score": 61,
           "classification": "Greed",
-          "assetPrice": "67,861"
+          "assetPrice": "67,461"
         },
         {
           "date": "Aug 17, 2026",
@@ -839,31 +845,25 @@
           "score": 56,
           "classification": "Greed",
           "assetPrice": "68,257"
-        },
-        {
-          "date": "Jul 6, 2026",
-          "score": 61,
-          "classification": "Greed",
-          "assetPrice": "69,738"
         }
       ]
     },
     {
       "key": "china",
       "label": "China",
-      "score": 51,
-      "classification": "Neutral",
+      "score": 40,
+      "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 50,
+          "score": 53,
           "classification": "Neutral"
         },
         "lastWeek": {
-          "score": 38,
+          "score": 39,
           "classification": "Fear"
         },
         "lastMonth": {
-          "score": 16,
+          "score": 19,
           "classification": "Extreme Fear"
         }
       },
@@ -879,10 +879,16 @@
       },
       "history": [
         {
+          "date": "Aug 19, 2026",
+          "score": 40,
+          "classification": "Fear",
+          "assetPrice": "3,906"
+        },
+        {
           "date": "Aug 18, 2026",
-          "score": 51,
+          "score": 53,
           "classification": "Neutral",
-          "assetPrice": "3,967"
+          "assetPrice": "3,990"
         },
         {
           "date": "Aug 17, 2026",
@@ -1051,19 +1057,13 @@
           "score": 39,
           "classification": "Fear",
           "assetPrice": "4,037"
-        },
-        {
-          "date": "Jul 8, 2026",
-          "score": 33,
-          "classification": "Fear",
-          "assetPrice": "3,971"
         }
       ]
     },
     {
       "key": "australia",
       "label": "Australia",
-      "score": 58,
+      "score": 56,
       "classification": "Greed",
       "historical": {
         "yesterday": {
@@ -1071,7 +1071,7 @@
           "classification": "Greed"
         },
         "lastWeek": {
-          "score": 68,
+          "score": 65,
           "classification": "Greed"
         },
         "lastMonth": {
@@ -1091,10 +1091,16 @@
       },
       "history": [
         {
-          "date": "Aug 18, 2026",
-          "score": 58,
+          "date": "Aug 19, 2026",
+          "score": 56,
           "classification": "Greed",
-          "assetPrice": "9,080"
+          "assetPrice": "9,050"
+        },
+        {
+          "date": "Aug 18, 2026",
+          "score": 57,
+          "classification": "Greed",
+          "assetPrice": "9,070"
         },
         {
           "date": "Aug 17, 2026",
@@ -1263,19 +1269,13 @@
           "score": 48,
           "classification": "Neutral",
           "assetPrice": "8,763"
-        },
-        {
-          "date": "Jul 8, 2026",
-          "score": 49,
-          "classification": "Neutral",
-          "assetPrice": "8,785"
         }
       ]
     },
     {
       "key": "canada",
       "label": "Canada",
-      "score": 70,
+      "score": 67,
       "classification": "Greed",
       "historical": {
         "yesterday": {
@@ -1287,7 +1287,7 @@
           "classification": "Greed"
         },
         "lastMonth": {
-          "score": 67,
+          "score": 68,
           "classification": "Greed"
         }
       },
@@ -1302,6 +1302,12 @@
         "score": 31
       },
       "history": [
+        {
+          "date": "Aug 18, 2026",
+          "score": 67,
+          "classification": "Greed",
+          "assetPrice": "36,368"
+        },
         {
           "date": "Aug 17, 2026",
           "score": 70,
@@ -1475,27 +1481,21 @@
           "score": 66,
           "classification": "Greed",
           "assetPrice": "35,273"
-        },
-        {
-          "date": "Jul 6, 2026",
-          "score": 66,
-          "classification": "Greed",
-          "assetPrice": "35,212"
         }
       ]
     },
     {
       "key": "gold",
       "label": "Gold",
-      "score": 61,
+      "score": 56,
       "classification": "Greed",
       "historical": {
         "yesterday": {
-          "score": 65,
+          "score": 58,
           "classification": "Greed"
         },
         "lastWeek": {
-          "score": 60,
+          "score": 63,
           "classification": "Greed"
         },
         "lastMonth": {
@@ -1515,10 +1515,16 @@
       },
       "history": [
         {
-          "date": "Aug 18, 2026",
-          "score": 61,
+          "date": "Aug 19, 2026",
+          "score": 56,
           "classification": "Greed",
-          "assetPrice": "4,449"
+          "assetPrice": "4,396"
+        },
+        {
+          "date": "Aug 18, 2026",
+          "score": 58,
+          "classification": "Greed",
+          "assetPrice": "4,421"
         },
         {
           "date": "Aug 17, 2026",
@@ -1687,27 +1693,21 @@
           "score": 30,
           "classification": "Fear",
           "assetPrice": "4,114"
-        },
-        {
-          "date": "Jul 9, 2026",
-          "score": 31,
-          "classification": "Fear",
-          "assetPrice": "4,141"
         }
       ]
     },
     {
       "key": "silver",
       "label": "Silver",
-      "score": 66,
-      "classification": "Greed",
+      "score": 55,
+      "classification": "Neutral",
       "historical": {
         "yesterday": {
-          "score": 71,
+          "score": 56,
           "classification": "Greed"
         },
         "lastWeek": {
-          "score": 67,
+          "score": 62,
           "classification": "Greed"
         },
         "lastMonth": {
@@ -1727,10 +1727,16 @@
       },
       "history": [
         {
+          "date": "Aug 19, 2026",
+          "score": 55,
+          "classification": "Neutral",
+          "assetPrice": "62"
+        },
+        {
           "date": "Aug 18, 2026",
-          "score": 66,
+          "score": 56,
           "classification": "Greed",
-          "assetPrice": "65"
+          "assetPrice": "63"
         },
         {
           "date": "Aug 17, 2026",
@@ -1899,31 +1905,25 @@
           "score": 28,
           "classification": "Fear",
           "assetPrice": "55"
-        },
-        {
-          "date": "Jul 15, 2026",
-          "score": 27,
-          "classification": "Fear",
-          "assetPrice": "58"
         }
       ]
     },
     {
       "key": "southkorea",
       "label": "South Korea",
-      "score": 48,
-      "classification": "Neutral",
+      "score": 28,
+      "classification": "Fear",
       "historical": {
         "yesterday": {
           "score": 46,
           "classification": "Neutral"
         },
         "lastWeek": {
-          "score": 16,
+          "score": 23,
           "classification": "Extreme Fear"
         },
         "lastMonth": {
-          "score": 36,
+          "score": 32,
           "classification": "Fear"
         }
       },
@@ -1939,10 +1939,16 @@
       },
       "history": [
         {
+          "date": "Aug 19, 2026",
+          "score": 28,
+          "classification": "Fear",
+          "assetPrice": "1,014"
+        },
+        {
           "date": "Aug 18, 2026",
-          "score": 48,
+          "score": 46,
           "classification": "Neutral",
-          "assetPrice": "1,092"
+          "assetPrice": "1,082"
         },
         {
           "date": "Aug 14, 2026",
@@ -2111,15 +2117,9 @@
           "score": 46,
           "classification": "Neutral",
           "assetPrice": "1,226"
-        },
-        {
-          "date": "Jul 6, 2026",
-          "score": 58,
-          "classification": "Greed",
-          "assetPrice": "1,293"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-08-18T05:45:48.584Z"
+  "lastUpdated": "2026-08-19T05:46:14.246Z"
 }
