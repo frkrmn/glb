@@ -34,7 +34,7 @@
           "date": "Aug 21, 2026",
           "score": 59,
           "classification": "Greed",
-          "assetPrice": "7,670"
+          "assetPrice": "7,674"
         },
         {
           "date": "Aug 20, 2026",
@@ -246,7 +246,7 @@
           "date": "Aug 21, 2026",
           "score": 63,
           "classification": "Greed",
-          "assetPrice": "6,464"
+          "assetPrice": "6,460"
         },
         {
           "date": "Aug 20, 2026",
@@ -1306,7 +1306,7 @@
           "date": "Aug 21, 2026",
           "score": 70,
           "classification": "Greed",
-          "assetPrice": "36,591"
+          "assetPrice": "36,620"
         },
         {
           "date": "Aug 20, 2026",
@@ -1487,7 +1487,7 @@
     {
       "key": "gold",
       "label": "Gold",
-      "score": 76,
+      "score": 75,
       "classification": "Extreme Greed",
       "historical": {
         "yesterday": {
@@ -1516,9 +1516,9 @@
       "history": [
         {
           "date": "Aug 21, 2026",
-          "score": 76,
+          "score": 75,
           "classification": "Extreme Greed",
-          "assetPrice": "4,684"
+          "assetPrice": "4,681"
         },
         {
           "date": "Aug 20, 2026",
@@ -1699,8 +1699,8 @@
     {
       "key": "silver",
       "label": "Silver",
-      "score": 75,
-      "classification": "Extreme Greed",
+      "score": 74,
+      "classification": "Greed",
       "historical": {
         "yesterday": {
           "score": 72,
@@ -1728,8 +1728,8 @@
       "history": [
         {
           "date": "Aug 21, 2026",
-          "score": 75,
-          "classification": "Extreme Greed",
+          "score": 74,
+          "classification": "Greed",
           "assetPrice": "69"
         },
         {
@@ -2121,5 +2121,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-08-22T05:46:35.553Z"
+  "lastUpdated": "2026-08-23T05:47:07.589Z"
 }
