@@ -3,7 +3,7 @@
     {
       "key": "us",
       "label": "US Market",
-      "score": 68,
+      "score": 69,
       "classification": "Greed",
       "historical": {
         "yesterday": {
@@ -32,9 +32,9 @@
       "history": [
         {
           "date": "Sep 4, 2026",
-          "score": 68,
+          "score": 69,
           "classification": "Greed",
-          "assetPrice": "7,710"
+          "assetPrice": "7,719"
         },
         {
           "date": "Sep 3, 2026",
@@ -215,7 +215,7 @@
     {
       "key": "eu",
       "label": "EU Market",
-      "score": 67,
+      "score": 66,
       "classification": "Greed",
       "historical": {
         "yesterday": {
@@ -244,9 +244,9 @@
       "history": [
         {
           "date": "Sep 4, 2026",
-          "score": 67,
+          "score": 66,
           "classification": "Greed",
-          "assetPrice": "6,413"
+          "assetPrice": "6,397"
         },
         {
           "date": "Sep 3, 2026",
@@ -2121,5 +2121,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-09-05T05:45:49.069Z"
+  "lastUpdated": "2026-09-06T05:45:46.973Z"
 }
