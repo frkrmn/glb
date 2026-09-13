@@ -34,7 +34,7 @@
           "date": "Sep 11, 2026",
           "score": 63,
           "classification": "Greed",
-          "assetPrice": "7,664"
+          "assetPrice": "7,657"
         },
         {
           "date": "Sep 10, 2026",
@@ -246,7 +246,7 @@
           "date": "Sep 11, 2026",
           "score": 60,
           "classification": "Greed",
-          "assetPrice": "6,324"
+          "assetPrice": "6,327"
         },
         {
           "date": "Sep 10, 2026",
@@ -1306,7 +1306,7 @@
           "date": "Sep 11, 2026",
           "score": 51,
           "classification": "Neutral",
-          "assetPrice": "35,678"
+          "assetPrice": "35,698"
         },
         {
           "date": "Sep 10, 2026",
@@ -2121,5 +2121,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-09-12T05:45:50.072Z"
+  "lastUpdated": "2026-09-13T05:45:51.428Z"
 }
