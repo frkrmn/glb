@@ -34,7 +34,7 @@
           "date": "Oct 9, 2026",
           "score": 68,
           "classification": "Greed",
-          "assetPrice": "7,811"
+          "assetPrice": "7,812"
         },
         {
           "date": "Oct 8, 2026",
@@ -215,7 +215,7 @@
     {
       "key": "eu",
       "label": "EU Market",
-      "score": 49,
+      "score": 48,
       "classification": "Neutral",
       "historical": {
         "yesterday": {
@@ -244,9 +244,9 @@
       "history": [
         {
           "date": "Oct 9, 2026",
-          "score": 49,
+          "score": 48,
           "classification": "Neutral",
-          "assetPrice": "6,194"
+          "assetPrice": "6,173"
         },
         {
           "date": "Oct 8, 2026",
@@ -1275,7 +1275,7 @@
     {
       "key": "canada",
       "label": "Canada",
-      "score": 51,
+      "score": 52,
       "classification": "Neutral",
       "historical": {
         "yesterday": {
@@ -1304,9 +1304,9 @@
       "history": [
         {
           "date": "Oct 9, 2026",
-          "score": 51,
+          "score": 52,
           "classification": "Neutral",
-          "assetPrice": "35,660"
+          "assetPrice": "35,665"
         },
         {
           "date": "Oct 8, 2026",
@@ -1518,7 +1518,7 @@
           "date": "Oct 9, 2026",
           "score": 49,
           "classification": "Neutral",
-          "assetPrice": "4,221"
+          "assetPrice": "4,216"
         },
         {
           "date": "Oct 8, 2026",
@@ -2121,5 +2121,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-10-10T05:45:56.398Z"
+  "lastUpdated": "2026-10-11T05:45:49.042Z"
 }
