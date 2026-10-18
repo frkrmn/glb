@@ -3,7 +3,7 @@
     {
       "key": "us",
       "label": "US Market",
-      "score": 61,
+      "score": 57,
       "classification": "Greed",
       "historical": {
         "yesterday": {
@@ -32,9 +32,9 @@
       "history": [
         {
           "date": "Oct 16, 2026",
-          "score": 61,
+          "score": 57,
           "classification": "Greed",
-          "assetPrice": "7,697"
+          "assetPrice": "7,659"
         },
         {
           "date": "Oct 15, 2026",
@@ -2121,5 +2121,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-10-17T05:46:40.324Z"
+  "lastUpdated": "2026-10-18T05:46:59.607Z"
 }
