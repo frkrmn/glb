@@ -3,8 +3,8 @@
     {
       "key": "us",
       "label": "US Market",
-      "score": 44,
-      "classification": "Fear",
+      "score": 47,
+      "classification": "Neutral",
       "historical": {
         "yesterday": {
           "score": 61,
@@ -34,7 +34,7 @@
     {
       "key": "eu",
       "label": "EU Market",
-      "score": 48,
+      "score": 52,
       "classification": "Neutral",
       "historical": {
         "yesterday": {
@@ -189,8 +189,8 @@
     {
       "key": "canada",
       "label": "Canada",
-      "score": 42,
-      "classification": "Fear",
+      "score": 45,
+      "classification": "Neutral",
       "historical": {
         "yesterday": {
           "score": 57,
@@ -220,7 +220,7 @@
     {
       "key": "gold",
       "label": "Gold",
-      "score": 32,
+      "score": 35,
       "classification": "Fear",
       "historical": {
         "yesterday": {
@@ -251,7 +251,7 @@
     {
       "key": "silver",
       "label": "Silver",
-      "score": 20,
+      "score": 19,
       "classification": "Extreme Fear",
       "historical": {
         "yesterday": {
@@ -311,5 +311,5 @@
       "history": []
     }
   ],
-  "lastUpdated": "2026-10-31T05:46:46.850Z"
+  "lastUpdated": "2026-11-01T05:47:02.065Z"
 }
