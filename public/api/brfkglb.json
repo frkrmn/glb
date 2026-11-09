@@ -3,7 +3,7 @@
     {
       "key": "us",
       "label": "US Market",
-      "score": 27,
+      "score": 26,
       "classification": "Fear",
       "historical": {
         "yesterday": {
@@ -255,27 +255,27 @@
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 24,
-          "classification": "Extreme Fear"
+          "score": 41,
+          "classification": "Fear"
         },
         "lastWeek": {
-          "score": 20,
-          "classification": "Extreme Fear"
+          "score": 52,
+          "classification": "Neutral"
         },
         "lastMonth": {
-          "score": 45,
+          "score": 46,
           "classification": "Neutral"
         }
       },
       "yearlyHigh": {
-        "date": "Aug 23, 2026",
+        "date": "Jan 6, 2026",
         "classification": "Extreme Greed",
-        "score": 76
+        "score": 79
       },
       "yearlyLow": {
-        "date": "Mar 22, 2026",
+        "date": "Mar 20, 2026",
         "classification": "Extreme Fear",
-        "score": 13
+        "score": 20
       },
       "history": []
     },
@@ -311,5 +311,5 @@
       "history": []
     }
   ],
-  "lastUpdated": "2026-11-07T05:46:43.934Z"
+  "lastUpdated": "2026-11-09T05:47:54.734Z"
 }
