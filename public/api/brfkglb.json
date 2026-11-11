@@ -3,19 +3,19 @@
     {
       "key": "us",
       "label": "US Market",
-      "score": 34,
+      "score": 32,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 26,
+          "score": 33,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 46,
+          "score": 47,
           "classification": "Neutral"
         },
         "lastMonth": {
-          "score": 66,
+          "score": 68,
           "classification": "Greed"
         }
       },
@@ -34,19 +34,19 @@
     {
       "key": "eu",
       "label": "EU Market",
-      "score": 47,
+      "score": 48,
       "classification": "Neutral",
       "historical": {
         "yesterday": {
-          "score": 40,
-          "classification": "Fear"
+          "score": 47,
+          "classification": "Neutral"
         },
         "lastWeek": {
-          "score": 52,
+          "score": 51,
           "classification": "Neutral"
         },
         "lastMonth": {
-          "score": 45,
+          "score": 49,
           "classification": "Neutral"
         }
       },
@@ -65,19 +65,19 @@
     {
       "key": "uk",
       "label": "UK Market",
-      "score": 48,
+      "score": 47,
       "classification": "Neutral",
       "historical": {
         "yesterday": {
-          "score": 45,
+          "score": 48,
           "classification": "Neutral"
         },
         "lastWeek": {
-          "score": 59,
-          "classification": "Greed"
+          "score": 49,
+          "classification": "Neutral"
         },
         "lastMonth": {
-          "score": 40,
+          "score": 43,
           "classification": "Fear"
         }
       },
@@ -96,7 +96,7 @@
     {
       "key": "japan",
       "label": "Japan",
-      "score": 14,
+      "score": 19,
       "classification": "Extreme Fear",
       "historical": {
         "yesterday": {
@@ -108,7 +108,7 @@
           "classification": "Fear"
         },
         "lastMonth": {
-          "score": 83,
+          "score": 77,
           "classification": "Extreme Greed"
         }
       },
@@ -131,11 +131,11 @@
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 28,
+          "score": 30,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 32,
+          "score": 30,
           "classification": "Fear"
         },
         "lastMonth": {
@@ -158,20 +158,20 @@
     {
       "key": "australia",
       "label": "Australia",
-      "score": 58,
+      "score": 61,
       "classification": "Greed",
       "historical": {
         "yesterday": {
-          "score": 57,
+          "score": 58,
           "classification": "Greed"
         },
         "lastWeek": {
-          "score": 64,
+          "score": 65,
           "classification": "Greed"
         },
         "lastMonth": {
-          "score": 43,
-          "classification": "Fear"
+          "score": 47,
+          "classification": "Neutral"
         }
       },
       "yearlyHigh": {
@@ -189,19 +189,19 @@
     {
       "key": "canada",
       "label": "Canada",
-      "score": 48,
-      "classification": "Neutral",
+      "score": 44,
+      "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 44,
-          "classification": "Fear"
-        },
-        "lastWeek": {
           "score": 48,
           "classification": "Neutral"
         },
+        "lastWeek": {
+          "score": 44,
+          "classification": "Fear"
+        },
         "lastMonth": {
-          "score": 46,
+          "score": 49,
           "classification": "Neutral"
         }
       },
@@ -220,19 +220,19 @@
     {
       "key": "gold",
       "label": "Gold",
-      "score": 43,
+      "score": 36,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 40,
+          "score": 42,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 37,
+          "score": 35,
           "classification": "Fear"
         },
         "lastMonth": {
-          "score": 46,
+          "score": 49,
           "classification": "Neutral"
         }
       },
@@ -251,15 +251,15 @@
     {
       "key": "silver",
       "label": "Silver",
-      "score": 32,
+      "score": 26,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 29,
+          "score": 32,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 21,
+          "score": 23,
           "classification": "Extreme Fear"
         },
         "lastMonth": {
@@ -282,7 +282,7 @@
     {
       "key": "southkorea",
       "label": "South Korea",
-      "score": 16,
+      "score": 19,
       "classification": "Extreme Fear",
       "historical": {
         "yesterday": {
@@ -290,12 +290,12 @@
           "classification": "Extreme Fear"
         },
         "lastWeek": {
-          "score": 20,
+          "score": 19,
           "classification": "Extreme Fear"
         },
         "lastMonth": {
-          "score": 51,
-          "classification": "Neutral"
+          "score": 42,
+          "classification": "Fear"
         }
       },
       "yearlyHigh": {
@@ -311,5 +311,5 @@
       "history": []
     }
   ],
-  "lastUpdated": "2026-11-10T05:46:26.265Z"
+  "lastUpdated": "2026-11-11T05:46:13.943Z"
 }
