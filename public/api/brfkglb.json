@@ -220,7 +220,7 @@
     {
       "key": "gold",
       "label": "Gold",
-      "score": 25,
+      "score": 26,
       "classification": "Fear",
       "historical": {
         "yesterday": {
@@ -311,5 +311,5 @@
       "history": []
     }
   ],
-  "lastUpdated": "2026-11-14T05:46:09.696Z"
+  "lastUpdated": "2026-11-15T05:46:21.432Z"
 }
