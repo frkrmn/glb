@@ -3,7 +3,7 @@
     {
       "key": "us",
       "label": "US Market",
-      "score": 13,
+      "score": 12,
       "classification": "Extreme Fear",
       "historical": {
         "yesterday": {
@@ -27,7 +27,7 @@
       "yearlyLow": {
         "date": "Nov 20, 2026",
         "classification": "Extreme Fear",
-        "score": 13
+        "score": 12
       },
       "history": []
     },
@@ -311,5 +311,5 @@
       "history": []
     }
   ],
-  "lastUpdated": "2026-11-21T05:46:15.097Z"
+  "lastUpdated": "2026-11-22T05:46:21.089Z"
 }
