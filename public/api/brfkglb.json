@@ -3,19 +3,19 @@
     {
       "key": "us",
       "label": "US Market",
-      "score": 23,
-      "classification": "Extreme Fear",
+      "score": 27,
+      "classification": "Fear",
       "historical": {
         "yesterday": {
           "score": 23,
           "classification": "Extreme Fear"
         },
         "lastWeek": {
-          "score": 25,
-          "classification": "Fear"
+          "score": 21,
+          "classification": "Extreme Fear"
         },
         "lastMonth": {
-          "score": 59,
+          "score": 61,
           "classification": "Greed"
         }
       },
@@ -34,19 +34,19 @@
     {
       "key": "eu",
       "label": "EU Market",
-      "score": 30,
+      "score": 35,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 26,
+          "score": 30,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 39,
+          "score": 29,
           "classification": "Fear"
         },
         "lastMonth": {
-          "score": 41,
+          "score": 42,
           "classification": "Fear"
         }
       },
@@ -65,19 +65,19 @@
     {
       "key": "uk",
       "label": "UK Market",
-      "score": 39,
+      "score": 42,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 35,
+          "score": 39,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 36,
+          "score": 33,
           "classification": "Fear"
         },
         "lastMonth": {
-          "score": 46,
+          "score": 47,
           "classification": "Neutral"
         }
       },
@@ -96,19 +96,19 @@
     {
       "key": "japan",
       "label": "Japan",
-      "score": 16,
+      "score": 17,
       "classification": "Extreme Fear",
       "historical": {
         "yesterday": {
-          "score": 15,
+          "score": 16,
           "classification": "Extreme Fear"
         },
         "lastWeek": {
-          "score": 23,
+          "score": 24,
           "classification": "Extreme Fear"
         },
         "lastMonth": {
-          "score": 34,
+          "score": 32,
           "classification": "Fear"
         }
       },
@@ -127,15 +127,15 @@
     {
       "key": "china",
       "label": "China",
-      "score": 23,
-      "classification": "Extreme Fear",
+      "score": 31,
+      "classification": "Fear",
       "historical": {
         "yesterday": {
           "score": 23,
           "classification": "Extreme Fear"
         },
         "lastWeek": {
-          "score": 30,
+          "score": 26,
           "classification": "Fear"
         },
         "lastMonth": {
@@ -158,15 +158,15 @@
     {
       "key": "australia",
       "label": "Australia",
-      "score": 36,
+      "score": 38,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 35,
+          "score": 36,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 39,
+          "score": 33,
           "classification": "Fear"
         },
         "lastMonth": {
@@ -189,20 +189,20 @@
     {
       "key": "canada",
       "label": "Canada",
-      "score": 27,
+      "score": 32,
       "classification": "Fear",
       "historical": {
         "yesterday": {
-          "score": 25,
+          "score": 27,
           "classification": "Fear"
         },
         "lastWeek": {
-          "score": 25,
-          "classification": "Fear"
+          "score": 18,
+          "classification": "Extreme Fear"
         },
         "lastMonth": {
-          "score": 55,
-          "classification": "Neutral"
+          "score": 56,
+          "classification": "Greed"
         }
       },
       "yearlyHigh": {
@@ -220,19 +220,19 @@
     {
       "key": "gold",
       "label": "Gold",
-      "score": 15,
+      "score": 21,
       "classification": "Extreme Fear",
       "historical": {
         "yesterday": {
-          "score": 13,
-          "classification": "Extreme Fear"
-        },
-        "lastWeek": {
           "score": 18,
           "classification": "Extreme Fear"
         },
+        "lastWeek": {
+          "score": 12,
+          "classification": "Extreme Fear"
+        },
         "lastMonth": {
-          "score": 50,
+          "score": 49,
           "classification": "Neutral"
         }
       },
@@ -251,38 +251,38 @@
     {
       "key": "silver",
       "label": "Silver",
-      "score": 17,
+      "score": 19,
       "classification": "Extreme Fear",
       "historical": {
         "yesterday": {
-          "score": 35,
-          "classification": "Fear"
+          "score": 17,
+          "classification": "Extreme Fear"
         },
         "lastWeek": {
-          "score": 36,
-          "classification": "Fear"
+          "score": 16,
+          "classification": "Extreme Fear"
         },
         "lastMonth": {
-          "score": 46,
-          "classification": "Neutral"
+          "score": 21,
+          "classification": "Extreme Fear"
         }
       },
       "yearlyHigh": {
-        "date": "Jan 16, 2026",
-        "classification": "Greed",
-        "score": 74
+        "date": "Aug 23, 2026",
+        "classification": "Extreme Greed",
+        "score": 76
       },
       "yearlyLow": {
-        "date": "Mar 23, 2026",
-        "classification": "Fear",
-        "score": 28
+        "date": "Mar 22, 2026",
+        "classification": "Extreme Fear",
+        "score": 13
       },
       "history": []
     },
     {
       "key": "southkorea",
       "label": "South Korea",
-      "score": 18,
+      "score": 19,
       "classification": "Extreme Fear",
       "historical": {
         "yesterday": {
@@ -290,11 +290,11 @@
           "classification": "Extreme Fear"
         },
         "lastWeek": {
-          "score": 28,
-          "classification": "Fear"
+          "score": 20,
+          "classification": "Extreme Fear"
         },
         "lastMonth": {
-          "score": 21,
+          "score": 23,
           "classification": "Extreme Fear"
         }
       },
@@ -311,5 +311,5 @@
       "history": []
     }
   ],
-  "lastUpdated": "2026-11-27T05:46:24.781Z"
+  "lastUpdated": "2026-11-28T05:46:14.717Z"
 }
